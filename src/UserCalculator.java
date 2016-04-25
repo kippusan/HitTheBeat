@@ -1,6 +1,9 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class is responsible for calculating the target heart rate of the user
+ */
 public class UserCalculator {
     public Map calculateTargetHeartRate (Integer age){  //function for calculating the THR
         Map <String, Integer> TargetHeartRates = new HashMap<>();  //create variable map that is able to store the new data with HR
