@@ -24,8 +24,9 @@ public class Insert {
             columnString += c;
 
             if (countColumn != column.size()){
-                columnString += c + ",";
+                columnString +=  ",";
             }
+
             countColumn++;
         }
 
@@ -34,14 +35,14 @@ public class Insert {
         String valuesString = "";
 
 
-        int count = 1;
+        int countValues = 1;
         for ( Object s : values) {
             valuesString += "'" +s + "'";
 
-            if (count != values.size()){
-                valuesString += s + ",";
+            if (countValues != values.size()){
+                valuesString +=  ",";
             }
-            count++;
+            countValues++;
         }
 
         System.out.println(valuesString);
