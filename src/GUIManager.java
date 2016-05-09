@@ -7,6 +7,7 @@ public class GUIManager {
     private static int SelectedProgram;
     private static Scanner scanner = new Scanner(System.in);
     private static Map<String, Double> UserDataMap = new HashMap<>();
+    private static int heartrate;
 
     public static void PromptForProgram() {
 
@@ -37,5 +38,14 @@ public class GUIManager {
     }
     public static Map getUserData() {
         return UserDataMap;
+    }
+
+    public static int getHeartRate() {
+        return heartrate;
+    }
+
+    public static void PromptForHeartRate() {
+        System.out.println("Enter heart rate: "); //TODO: remove scanner!!!!
+        heartrate = scanner.nextInt();
     }
 }

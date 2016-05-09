@@ -11,9 +11,9 @@ import java.sql.Connection;
 /* This class is the one responsible for DB connection*/
 public class ConfConn {
     private static Connection conn;
-    private static String url1 = "jdbc:mysql://localhost:3306/World";
+    private static String url1 = "jdbc:mysql://localhost:3306/hitthebeat";
     private static String user = "root";
-    private static String password = "a1a2a3a4a5aaa";
+    private static String password = "";
 
 
     public static Connection getConnection() throws SQLException{

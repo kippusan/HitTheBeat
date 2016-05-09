@@ -11,6 +11,13 @@ public class UserCalculator {
         TargetHeartRates.put("min-highintensity", (int)(maxHeartRate*0.70));
         TargetHeartRates.put("max-highintensity", (int)(maxHeartRate*0.85));
 
+        System.out.println("Target heart rates:");
+        System.out.println("Min low-intensity: " + TargetHeartRates.get("min-lowintensity"));
+        System.out.println("Max low-intensity: " + TargetHeartRates.get("max-lowintensity"));
+        System.out.println("Min high-intensity: " + TargetHeartRates.get("min-highintensity"));
+        System.out.println("Max high-intensity: " + TargetHeartRates.get("max-highintensity"));
+        System.out.println();
+
         return TargetHeartRates;
     }
 }
